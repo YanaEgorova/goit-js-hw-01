@@ -1,9 +1,6 @@
 'use strict';
 
-
-
 let userChoice = prompt('Укажите Вашу страну');
-
 let message;
 
 
@@ -13,12 +10,6 @@ const AUSTRALIA = 'австралия';
 const INDIA = 'индия';
 const YAMAYKA = 'ямайка';
 
-
-
-
-
-
-
 if (userChoice === null) {
   message = 'Отменено пользователем';
 } else {
@@ -26,7 +17,6 @@ if (userChoice === null) {
   userChoice = userChoice.toLowerCase();
 
   switch (userChoice) {
-
 
     case CHINA:
 
@@ -52,15 +42,6 @@ if (userChoice === null) {
 
     default:
       alert('В вашей стране доставка не доступна');
-
   }
-
-
-
-
-
 }
-
-
-
 console.log(message);
